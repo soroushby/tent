@@ -1,0 +1,29 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+// .image {
+//   background-image: url(C:\Users\User\Desktop\el\tentWebsite\src\assets\charles-deluvio-Lks7vei-eAg-unsplash.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   // width: 10rem;
+//   min-height: 79rem;
+// }
+
+// .example-container {
+//   width: 400px;
+//   height: 200px;
+//   margin: 10px;
+//   border: 1px solid #555;
+// }
+
+mat-sidenav-container,
+mat-sidenav,
+mat-sidenav-content {
+  height: 100%;
+}
+
+.res {
+  position: absolute;
+  background-color: transparent;
+}
