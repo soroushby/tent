@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tentWebsite"
+    }
+  },
+  "defaultProject": "tentWebsite",
+  "cli": {
+    "analytics": "6b913b7c-d6c4-4b57-8589-d53595623f63"
+  }
 }
