@@ -1,7 +1,51 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" #sidenav>Sidenav content</mat-sidenav>
+  <mat-sidenav #sidenav class="sidenav">
+    <mat-nav-list
+      role="list"
+      fxLayoutAlign="center center"
+      fxLayout="column"
+      fxLayoutAlign="center end"
+    >
+      <mat-list-item
+        role="listitem"
+        fxLayoutAlign="center center"
+        routerLink="/welcome"
+        (click)="sidenav.close()"
+        class="matlist"
+        >Home</mat-list-item
+      >
+
+      <mat-list-item
+        role="listitem"
+        fxLayoutAlign="center center"
+        routerLink="/"
+        (click)="sidenav.close()"
+        class="matlist"
+        >Portfolios</mat-list-item
+      >
+
+      <mat-list-item
+        role="listitem"
+        fxLayoutAlign="center center"
+        routerLink="/"
+        (click)="sidenav.close()"
+        class="matlist"
+        >About tent</mat-list-item
+      >
+
+      <mat-list-item
+        role="listitem"
+        fxLayoutAlign="center center"
+        routerLink="/"
+        (click)="sidenav.close()"
+        class="matlist"
+        >ContactUs</mat-list-item
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+
   <mat-sidenav-content>
-    <mat-toolbar>
+    <mat-toolbar class="res" fxLayout="row">
       <button
         (click)="sidenav.toggle()"
         mat-icon-button
@@ -10,7 +54,37 @@
       >
         <mat-icon>menu</mat-icon>
       </button>
-      <span>My App</span>
+
+      <ul role="list" fxLayout="row" fxLayoutGap="5rem">
+        <li>
+          <a
+            role="listitem"
+            routerLink="/welcome"
+            routerLinkActive="active"
+            class="nav-list"
+            >Home</a
+          >
+        </li>
+
+        <li>
+          <a role="listitem" routerLink="/" routerLinkActive="active"
+            >Portfolios</a
+          >
+        </li>
+
+        <li>
+          <a role="listitem" routerLink="/" routerLinkActive="active"
+            >About tent</a
+          >
+        </li>
+
+        <li>
+          <a role="listitem" routerLink="/" routerLinkActive="active"
+            >ContactUs</a
+          >
+        </li>
+      </ul>
+
       <span class="example-spacer"></span>
       <button
         mat-icon-button

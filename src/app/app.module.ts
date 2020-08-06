@@ -6,10 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [AppComponent, WelcomeComponent],
-  imports: [BrowserModule, AppRoutingModule, MaterialModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,122 @@
+.main {
+  // background-image: url(../../assets/charles-deluvio-Lks7vei-eAg-unsplash.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  min-height: 100vh;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.main2 {
+  background-image: linear-gradient(rgba(7, 6, 44, 0.7), rgba(7, 6, 44, 0.7)),
+    url(../../assets/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.main3 {
+  background-color: #ff8671;
+  min-height: 50vh;
+}
+
+.main4 {
+  background-image: linear-gradient(
+      rgba(15, 75, 20, 0.781),
+      rgba(15, 75, 20, 0.719)
+    ),
+    url(C:\Users\User\Desktop\el\tentWebsite\src\assets\marcella-oscar-uRSk8pT0Elg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.mat-display-3 {
+  color: white;
+}
+
+.heading-primary {
+  animation-name: moveOnTop;
+  animation-duration: 2s;
+  backface-visibility: hidden;
+  margin-bottom: 4rem;
+}
+
+.heading-primary-main {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 1.5rem;
+}
+
+@keyframes moveOnTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+  }
+  60% {
+    opacity: 0.5;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.9s;
+  letter-spacing: 0.8rem;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #ff8671;
+  color: rgb(15, 75, 20);
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.main_text2 {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 1.5rem;
+}
