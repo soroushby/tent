@@ -1,26 +1,22 @@
 <div class="main" fxLayout="row">
   <div fxLayoutAlign="center center" fxLayout="column" fxFlex>
-    <div class="bg-video">
-      <video autoplay muted loop class="bg-video__content">
+    <div class="main-bg-video">
+      <video autoplay muted loop class="main-bg-video__content">
         <source src="../../assets/New-York-Jam (1).mp4" type="video/mp4" />
         Your browser isn't supported! ../../assets/New-York-Jam (1).mp4
       </video>
     </div>
-    <h1
-      class="heading-primary"
-      class="mat-display-3"
-      fxLayoutAlign="center center"
-    >
+    <h1 class="mat-display-3" fxLayoutAlign="center center">
       Welcome to the next generation of web design...
     </h1>
-    <div class="btn-position" fxLayoutAlign="start center">
-      <a routerLink="/" class="btn btn-white">follow us &rarr;</a>
+    <div class="main-btn-position" fxLayoutAlign="start center">
+      <a routerLink="/" class="main-btn main-btn-white">follow us &rarr;</a>
     </div>
   </div>
 </div>
 
 <div class="main2">
-  <mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-list cols="2" rowHeight="2:1" gutterSize="5rem">
     <mat-grid-tile>1</mat-grid-tile>
     <mat-grid-tile>2</mat-grid-tile>
     <mat-grid-tile>3</mat-grid-tile>
@@ -30,26 +26,89 @@
 
 <div class="main3">
   <div fxLayoutAlign="center center">
-    <h1>Our Skills</h1>
+    <h1 class="main3-header">Our Skills</h1>
   </div>
-  <div>
+  <div fxHide.lt-md>
     <mat-grid-list cols="8" rowHeight="2:1">
-      <mat-grid-tile>1</mat-grid-tile>
-      <mat-grid-tile>2</mat-grid-tile>
-      <mat-grid-tile>3</mat-grid-tile>
-      <mat-grid-tile>4</mat-grid-tile>
-      <mat-grid-tile>5</mat-grid-tile>
-      <mat-grid-tile>6</mat-grid-tile>
-      <mat-grid-tile>7</mat-grid-tile>
-      <mat-grid-tile>8</mat-grid-tile>
+      <mat-grid-tile>
+        <img
+          class="main3-icon"
+          src="../../assets/HTML5_logo_and_wordmark.svg"
+        />
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img class="main3-icon" src="../../assets/CSS3_logo_and_wordmark.svg" />
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img
+          class="main3-icon"
+          src="../../assets/javascript-js-seeklogo.com.svg"
+        />
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img class="main3-icon" src="../../assets/angular-seeklogo.com.svg" />
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img
+          class="main3-icon"
+          src="../../assets/redux-observable-seeklogo.com.svg"
+        />
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img class="main3-icon" src="../../assets/firebase-seeklogo.com.svg" />
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img class="main3-icon" src="../../assets/nodejs-seeklogo.com.svg" />
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img class="main3-icon" src="../../assets/auth0-seeklogo.com.svg" />
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <div fxHide.gt-md fxHide.md>
+    <mat-grid-list cols="2" rowHeight="8:4" fxLayoutGap="1rem">
+      <mat-grid-tile
+        ><img
+          class="main3-icon"
+          src="../../assets/HTML5_logo_and_wordmark.svg"
+        />
+      </mat-grid-tile>
+      <mat-grid-tile
+        ><img class="main3-icon" src="../../assets/CSS3_logo_and_wordmark.svg"
+      /></mat-grid-tile>
+      <mat-grid-tile
+        ><img
+          class="main3-icon"
+          src="../../assets/javascript-js-seeklogo.com.svg"
+      /></mat-grid-tile>
+      <mat-grid-tile
+        ><img class="main3-icon" src="../../assets/angular-seeklogo.com.svg"
+      /></mat-grid-tile>
+      <mat-grid-tile
+        ><img
+          class="main3-icon"
+          src="../../assets/redux-observable-seeklogo.com.svg"
+      /></mat-grid-tile>
+      <mat-grid-tile
+        ><img class="main3-icon" src="../../assets/firebase-seeklogo.com.svg"
+      /></mat-grid-tile>
+      <mat-grid-tile
+        ><img class="main3-icon" src="../../assets/nodejs-seeklogo.com.svg"
+      /></mat-grid-tile>
+      <mat-grid-tile
+        ><img class="main3-icon" src="../../assets/auth0-seeklogo.com.svg"
+      /></mat-grid-tile>
     </mat-grid-list>
   </div>
 </div>
 
 <div class="main4">
-  <mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-list class="main4-grid-list" cols="2" rowHeight="5:1" fxHide.lt-md>
     <mat-grid-tile>
-      <h1>ABOUT US</h1>
+      <mat-grid-tile-header>
+        About Us
+      </mat-grid-tile-header>
 
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
       impedit est odit excepturi vel deleniti itaque voluptates accusamus. Autem
@@ -58,7 +117,39 @@
     </mat-grid-tile>
 
     <mat-grid-tile>
-      <h1>CONTACT US</h1>
+      <mat-grid-tile-header>
+        Contact us
+      </mat-grid-tile-header>
+
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+      impedit est odit excepturi vel deleniti itaque voluptates accusamus. Autem
+      enim animi ea voluptatibus eum impedit. Maiores perferendis porro culpa?
+      Exercitationem.
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list
+    fxHide.gt-md
+    fxHide.md
+    class="grid-list"
+    cols="2"
+    rowHeight="1:3"
+  >
+    <mat-grid-tile>
+      <mat-grid-tile-header>
+        ABOUT US
+      </mat-grid-tile-header>
+
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+      impedit est odit excepturi vel deleniti itaque voluptates accusamus. Autem
+      enim animi ea voluptatibus eum impedit. Maiores perferendis porro culpa?
+      Exercitationem.
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-grid-tile-header>
+        Contact us
+      </mat-grid-tile-header>
 
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
       impedit est odit excepturi vel deleniti itaque voluptates accusamus. Autem
