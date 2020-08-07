@@ -16,17 +16,26 @@
 </div>
 
 <div class="main2">
-  <mat-grid-list cols="2" rowHeight="2:1" gutterSize="5rem">
-    <mat-grid-tile>1</mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-    <mat-grid-tile>3</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
+  <mat-grid-list cols="2" rowHeight="1:1" gutterSize="5rem">
+    <mat-grid-tile>
+      <mat-card class="main2-card" fxLayoutAlign="center start"
+        >Simple card</mat-card
+      >
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="main2-card" fxLayoutAlign="center start"
+        >Simple card</mat-card
+      >
+    </mat-grid-tile>
   </mat-grid-list>
 </div>
 
 <div class="main3">
   <div fxLayoutAlign="center center">
-    <h1 class="main3-header">Our Skills</h1>
+    <h1 class="main3-header">
+      Our Skills
+    </h1>
+    <h3>We choose the bests for your project...</h3>
   </div>
   <div fxHide.lt-md>
     <mat-grid-list cols="8" rowHeight="2:1">
@@ -107,13 +116,15 @@
   <mat-grid-list class="main4-grid-list" cols="2" rowHeight="5:1" fxHide.lt-md>
     <mat-grid-tile>
       <mat-grid-tile-header>
-        About Us
+        About us
       </mat-grid-tile-header>
 
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
-      impedit est odit excepturi vel deleniti itaque voluptates accusamus. Autem
-      enim animi ea voluptatibus eum impedit. Maiores perferendis porro culpa?
-      Exercitationem.
+      <ng-container class="main4-info">
+        ipsum, dolor sit amet consectetur adipisicing elit. Accusantium impedit
+        est odit excepturi vel deleniti itaque voluptates accusamus. Autem enim
+        animi ea voluptatibus eum impedit. Maiores perferendis porro culpa?
+        Exercitationem.
+      </ng-container>
     </mat-grid-tile>
 
     <mat-grid-tile>
@@ -121,10 +132,12 @@
         Contact us
       </mat-grid-tile-header>
 
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
-      impedit est odit excepturi vel deleniti itaque voluptates accusamus. Autem
-      enim animi ea voluptatibus eum impedit. Maiores perferendis porro culpa?
-      Exercitationem.
+      <ng-container class="main4-info">
+        ipsum, dolor sit amet consectetur adipisicing elit. Accusantium impedit
+        est odit excepturi vel deleniti itaque voluptates accusamus. Autem enim
+        animi ea voluptatibus eum impedit. Maiores perferendis porro culpa?
+        Exercitationem.
+      </ng-container>
     </mat-grid-tile>
   </mat-grid-list>
 
