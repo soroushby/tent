@@ -18,20 +18,63 @@
 <div class="main2">
   <mat-grid-list cols="2" rowHeight="1:1" gutterSize="5rem">
     <mat-grid-tile>
-      <mat-card class="main2-card" fxLayoutAlign="center start"
-        >Simple card</mat-card
+      <mat-card
+        fxLayoutGap="1rem"
+        class="main2-card"
+        fxLayoutAlign="start center"
+        fxLayout="column"
       >
+        <mat-card-header>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img
+          src="../../assets/computer-line.svg"
+          alt="computer icon"
+          class="main2-icon"
+        />
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz
+            breeds of dog from Japan. A small, agile dog that copes very well
+            with mountainous terrain, the Shiba Inu was originally bred for
+            hunting.
+          </p>
+        </mat-card-content>
+      </mat-card>
     </mat-grid-tile>
+
     <mat-grid-tile>
-      <mat-card class="main2-card" fxLayoutAlign="center start"
-        >Simple card</mat-card
+      <mat-card
+        class="main2-card"
+        fxLayoutAlign="start center "
+        fxLayoutGap="1rem"
+        fxLayout="column"
       >
+        <mat-card-header>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img
+          src="../../assets/computer-line.svg"
+          alt="computer icon"
+          class="main2-icon"
+        />
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz
+            breeds of dog from Japan. A small, agile dog that copes very well
+            with mountainous terrain, the Shiba Inu was originally bred for
+            hunting.
+          </p>
+        </mat-card-content>
+      </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
 
 <div class="main3">
-  <div fxLayoutAlign="center center">
+  <div fxLayoutAlign="center center" fxLayout="column">
     <h1 class="main3-header">
       Our Skills
     </h1>
@@ -39,12 +82,6 @@
   </div>
   <div fxHide.lt-md>
     <mat-grid-list cols="8" rowHeight="2:1">
-      <mat-grid-tile>
-        <img
-          class="main3-icon"
-          src="../../assets/HTML5_logo_and_wordmark.svg"
-        />
-      </mat-grid-tile>
       <mat-grid-tile>
         <img class="main3-icon" src="../../assets/CSS3_logo_and_wordmark.svg" />
       </mat-grid-tile>
@@ -68,6 +105,9 @@
       </mat-grid-tile>
       <mat-grid-tile>
         <img class="main3-icon" src="../../assets/nodejs-seeklogo.com.svg" />
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img class="main3-icon" src="../../assets/mongodb-seeklogo.com.svg" />
       </mat-grid-tile>
       <mat-grid-tile>
         <img class="main3-icon" src="../../assets/auth0-seeklogo.com.svg" />
