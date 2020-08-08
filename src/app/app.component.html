@@ -18,7 +18,7 @@
       <mat-list-item
         role="listitem"
         fxLayoutAlign="center center"
-        routerLink="/"
+        routerLink="/portfolio"
         (click)="sidenav.close()"
         class="matlist"
         >Portfolios</mat-list-item
@@ -45,7 +45,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar class="res" fxLayout="row">
+    <mat-toolbar class="res" fxLayout="row" role="heading">
       <button
         (click)="sidenav.toggle()"
         mat-icon-button
@@ -67,7 +67,7 @@
         </li>
 
         <li fxHide.lt-md>
-          <a role="listitem" routerLink="/" routerLinkActive="active"
+          <a role="listitem" routerLink="/portfolio" routerLinkActive="active"
             >Portfolios</a
           >
         </li>
