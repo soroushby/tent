@@ -41,8 +41,8 @@
   }
 
   &-btn-white {
-    background-color: #ff8671;
-    color: rgb(15, 75, 20);
+    background-color: rgba(7, 6, 44, 0.8);
+    color: white;
   }
 
   &-btn {
@@ -62,8 +62,15 @@
   &-card {
     width: 50%;
     height: 70%;
-    background-color: #f7f7f7;
+    background-color: #f7f7f7c5;
+
     transition: all 0.5s;
+    // background-image: linear-gradient(
+    //   to bottom right,
+    //   #f7f7f7,
+    //   rgba(38, 38, 252, 0.562)
+    // );
+
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -75,6 +82,17 @@
       -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
     }
+
+    &__content {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  &-icon {
+    width: 6rem;
+    height: 6rem;
   }
 }
 
@@ -132,15 +150,23 @@
 
   &-grid-list {
     font-size: 2rem;
+    height: 100%;
+  }
+
+  &-card {
+    width: 60%;
+    height: 40%;
+    background-color: transparent;
+    box-shadow: none;
   }
 }
 
-.main4 mat-grid-tile-header {
-  font-size: 3rem;
-  font-weight: 200;
-  background: none;
-  color: black;
-}
+// .main4 mat-grid-tile-header {
+//   font-size: 3rem;
+//   font-weight: 200;
+//   background: none;
+//   color: black;
+// }
 
 .mat-display-3 {
   color: white;
@@ -172,3 +198,8 @@
     transform: translate(0);
   }
 }
+
+// mat-card {
+//   background-color: transparent;
+//   box-shadow: 0;
+// }
