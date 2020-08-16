@@ -61,7 +61,7 @@
 
   &-card {
     width: 50%;
-    height: 70%;
+    height: 60%;
     background-color: #f7f7f7c5;
 
     transition: all 0.5s;
@@ -141,8 +141,11 @@
 }
 
 .main4 {
-  background-image: linear-gradient(rgba(80, 80, 80, 0), rgba(128, 128, 128, 0)),
-    url(../../assets/paul-volkmer-_Apdet7E5yU-unsplash.jpg);
+  background-image: linear-gradient(
+      rgba(80, 80, 80, 0.2),
+      rgba(197, 111, 111, 0.425)
+    ),
+    url(../../assets/marcella-oscar-uRSk8pT0Elg-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,6 +159,7 @@
   &-card {
     width: 60%;
     height: 40%;
+
     background-color: transparent;
     box-shadow: none;
   }

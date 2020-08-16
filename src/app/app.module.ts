@@ -8,9 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, WelcomeComponent, PortfolioComponent],
+  declarations: [AppComponent, WelcomeComponent, PortfolioComponent, PageNotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
