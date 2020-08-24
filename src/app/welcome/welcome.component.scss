@@ -41,7 +41,8 @@
   }
 
   &-btn-white {
-    background-color: rgba(7, 6, 44, 0.8);
+    //background-color: rgba(7, 6, 44, 0.8);
+    background-color: rgba(128, 128, 128, 0.685);
     color: white;
   }
 
@@ -52,7 +53,7 @@
 }
 
 .main2 {
-  background-image: linear-gradient(rgba(7, 6, 44, 0.7), rgba(7, 6, 44, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../../assets/christopher-gower-m_HRfLhgABo-unsplash.jpg);
   background-repeat: no-repeat;
 
@@ -149,10 +150,10 @@
 
 .main4 {
   background-image: linear-gradient(
-      rgba(80, 80, 80, 0.2),
-      rgba(197, 111, 111, 0.425)
+      rgba(0, 0, 0, 0.404),
+      rgba(197, 111, 111, 0)
     ),
-    url(../../assets/marcella-oscar-uRSk8pT0Elg-unsplash.jpg);
+    url(../../assets/nico-baum-xZroI5V_dxc-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -164,6 +165,7 @@
   }
 
   &-card {
+    //color: white;
     width: 60%;
     height: 40%;
 

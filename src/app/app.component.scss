@@ -17,7 +17,8 @@ a {
 }
 
 a:hover {
-  color: #ff8671;
+  //color: #ff8671;
+  color: black;
 }
 
 li {
@@ -30,8 +31,8 @@ li {
 
 .sidenav {
   width: 20rem;
-  background: rgba(7, 6, 44, 0.753);
-  // background: linear-gradient(to left, #000000, #2d2d31);
+  //background: rgba(7, 6, 44, 0.753);
+  background: rgba(128, 128, 128, 0.774);
 }
 
 .example-icon {
@@ -43,7 +44,8 @@ li {
 }
 
 mat-list-item:hover {
-  color: #ff8671;
+  //color: #ff8671;
+  color: black;
 }
 
 // .nav-list {
