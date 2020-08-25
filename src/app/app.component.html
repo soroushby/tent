@@ -54,8 +54,19 @@
       >
         <mat-icon>menu</mat-icon>
       </button>
+      <button
+        mat-icon-button
+        class="example-icon1"
+        aria-label="Example icon-button with phone icon"
+      >
+        <a
+          fxLayoutAlign="center center"
+          href="https://wa.me/0014039032374/?text=urlencodedtext"
+          ><mat-icon>phone</mat-icon></a
+        >
+      </button>
 
-      <ul role="list" fxLayout="row" fxLayoutGap="5rem">
+      <ul role="list" fxLayout="row" fxLayoutGap="3.5rem">
         <li fxHide.lt-md>
           <a
             role="listitem"
@@ -89,17 +100,6 @@
       <a routerLink="/welcome" fxLayoutAlign="center center"
         ><img class="logo" src="../assets/nn1.png" />
       </a>
-      <button
-        mat-icon-button
-        class="example-icon"
-        aria-label="Example icon-button with phone icon"
-      >
-        <a
-          fxLayoutAlign="center center"
-          href="https://wa.me/0014039032374/?text=urlencodedtext"
-          ><mat-icon>phone</mat-icon></a
-        >
-      </button>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
